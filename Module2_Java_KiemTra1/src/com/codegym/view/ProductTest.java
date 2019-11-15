@@ -62,6 +62,7 @@ public class ProductTest {
                 }
                 case 6: {
                     productController.sortPrice();
+                    break;
                 }
 
                 case 0: {
@@ -94,6 +95,7 @@ public class ProductTest {
         String name = scanner.nextLine();
         System.out.println("Nhap gia: ");
         double price = scanner.nextDouble();
+        scanner.nextLine();
         System.out.println("Nhap trang thai: ");
         String status = scanner.nextLine();
         System.out.println("Nhap dac diem: ");
@@ -111,6 +113,7 @@ public class ProductTest {
         String newName = scanner.nextLine();
         System.out.println("Nhap PRICE moi: ");
         double newPrice = scanner.nextDouble();
+        scanner.nextLine();
         System.out.println("Nhap STATUS moi: ");
         String newStatus = scanner.nextLine();
         System.out.println("Nhap DESCRIPTION moi: ");
