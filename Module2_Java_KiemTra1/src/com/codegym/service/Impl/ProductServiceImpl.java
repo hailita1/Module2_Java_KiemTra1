@@ -30,9 +30,9 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void findByName(String name) {
+    public Product findByName(String name) {
 
-        productRepositoty.findByName(name);
+        return productRepositoty.findByName(name);
     }
 
     @Override

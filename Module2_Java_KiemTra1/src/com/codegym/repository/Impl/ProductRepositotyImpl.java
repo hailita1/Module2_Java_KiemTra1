@@ -50,16 +50,14 @@ public class ProductRepositotyImpl implements ProductRepository {
     }
 
     @Override
-    public void findByName(String name) {
-        ArrayList<Product> productLists = new ArrayList<>();
+    public Product findByName(String name) {
         for (int i = 0; i < listProducts.size(); i++) {
             if (listProducts.get(i).getName().contains(name)) {
-                productLists.add(listProducts.get(i));
+                return listProducts.get(i);
             }
+
         }
-        for (Product p : productLists) {
-            System.out.println("ID: " + p.getId() + "\tNAME: " + p.getName() + "\tPRICE: " + p.getPrice() + "\tSTATUS: " + p.getStatus() + "\tDESCRIPTION: " + p.getDescription());
-        }
+        return null;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.codegym.service;
 
+import com.codegym.model.Product;
+
 import java.util.List;
 
 public interface GeneralService<E> {
@@ -11,7 +13,7 @@ public interface GeneralService<E> {
 
     void delete(int id);
 
-    void findByName(String name);
+    Product findByName(String name);
 
     boolean check(Object o);
 }

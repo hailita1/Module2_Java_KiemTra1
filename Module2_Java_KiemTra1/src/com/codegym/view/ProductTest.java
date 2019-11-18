@@ -52,10 +52,11 @@ public class ProductTest {
                 case 5: {
                     System.out.println("Nhap ten san pham muon tim: ");
                     String nameSp = new Scanner(System.in).nextLine();
-                    if (productController.check((String) nameSp) == true) {
-                        productController.findByName(nameSp);
-                    } else {
-                        System.out.println("Khong co san pham trong danh sach !!!");
+                    Product product = productController.findByName(nameSp);
+                    if (product != null){
+                        System.out.println(product.getName());
+                    }else {
+                        System.out.println("Khong tim thay ten san pham");
                     }
 
                     break;

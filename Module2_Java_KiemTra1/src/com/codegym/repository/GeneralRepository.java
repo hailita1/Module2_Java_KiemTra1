@@ -1,5 +1,7 @@
 package com.codegym.repository;
 
+import com.codegym.model.Product;
+
 import java.util.List;
 
 public interface GeneralRepository<E> {
@@ -11,7 +13,7 @@ public interface GeneralRepository<E> {
 
     void delete(int id);
 
-    void findByName(String name);
+    Product findByName(String name);
 
     boolean check(Object o);
 }

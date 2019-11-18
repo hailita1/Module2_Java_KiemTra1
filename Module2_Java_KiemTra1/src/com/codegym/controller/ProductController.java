@@ -24,14 +24,15 @@ public class ProductController {
         productService.delete(id);
     }
 
-    public void findByName(String name) {
-        productService.findByName(name);
+    public Product findByName(String name) {
+        return productService.findByName(name);
     }
 
     public boolean check(Object o) {
         return productService.check(o);
     }
-    public void sortPrice(){
+
+    public void sortPrice() {
         productService.sortPrice();
     }
 }
