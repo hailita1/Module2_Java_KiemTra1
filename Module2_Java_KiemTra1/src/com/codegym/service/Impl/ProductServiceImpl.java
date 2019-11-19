@@ -15,18 +15,18 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void add(Product product) {
-        productRepositoty.add(product);
+    public void addProduct(Product product) {
+        productRepositoty.addProduct(product);
     }
 
     @Override
-    public void update(int id, Product product) {
-        productRepositoty.update(id, product);
+    public void updateProduct(int id, Product product) {
+        productRepositoty.updateProduct(id, product);
     }
 
     @Override
-    public void delete(int id) {
-        productRepositoty.delete(id);
+    public void deleteProduct(int id) {
+        productRepositoty.deleteProduct(id);
     }
 
     @Override
@@ -36,8 +36,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public boolean check(Object o) {
-        return productRepositoty.check(o);
+    public boolean checkProduct(Object o) {
+        return productRepositoty.checkProduct(o);
     }
 
     @Override

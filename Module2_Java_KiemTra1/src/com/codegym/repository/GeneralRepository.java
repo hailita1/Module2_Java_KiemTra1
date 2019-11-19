@@ -7,13 +7,13 @@ import java.util.List;
 public interface GeneralRepository<E> {
     List<E> findAll();
 
-    void add(E e);
+    void addProduct(E e);
 
-    void update(int id, E e);
+    void updateProduct(int id, E e);
 
-    void delete(int id);
+    void deleteProduct(int id);
 
     Product findByName(String name);
 
-    boolean check(Object o);
+    boolean checkProduct(Object o);
 }

@@ -13,15 +13,15 @@ public class ProductController {
     }
 
     public void addProduct(Product product) {
-        productService.add(product);
+        productService.addProduct(product);
     }
 
     public void updateProduct(int id, Product product) {
-        productService.update(id, product);
+        productService.updateProduct(id, product);
     }
 
     public void deleteProduct(int id) {
-        productService.delete(id);
+        productService.deleteProduct(id);
     }
 
     public Product findByName(String name) {
@@ -29,7 +29,7 @@ public class ProductController {
     }
 
     public boolean check(Object o) {
-        return productService.check(o);
+        return productService.checkProduct(o);
     }
 
     public List<Product> sortPrice() {

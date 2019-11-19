@@ -22,12 +22,12 @@ public class ProductRepositotyImpl implements ProductRepository {
     }
 
     @Override
-    public void add(Product product) {
+    public void addProduct(Product product) {
         listProducts.add(product);
     }
 
     @Override
-    public void update(int id, Product product) {
+    public void updateProduct(int id, Product product) {
         int index = -1;
         for (int i = 0; i < listProducts.size(); i++) {
             if (listProducts.get(i).getId() == id) {
@@ -40,7 +40,7 @@ public class ProductRepositotyImpl implements ProductRepository {
     }
 
     @Override
-    public void delete(int id) {
+    public void deleteProduct(int id) {
         for (int i = 0; i < listProducts.size(); i++) {
             if (listProducts.get(i).getId() == id) {
                 listProducts.remove(i);
@@ -61,7 +61,7 @@ public class ProductRepositotyImpl implements ProductRepository {
     }
 
     @Override
-    public boolean check(Object o) {
+    public boolean checkProduct(Object o) {
         boolean check = false;
         int id = -1;
 

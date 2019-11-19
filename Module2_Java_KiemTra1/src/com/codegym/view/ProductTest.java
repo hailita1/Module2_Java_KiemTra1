@@ -54,7 +54,7 @@ public class ProductTest {
                     String nameSp = new Scanner(System.in).nextLine();
                     Product product = productController.findByName(nameSp);
                     if (product != null) {
-                        System.out.println(product.getName());
+                        System.out.println("ID:\t " + product.getId() + "\t NAME: " + product.getName() + "\tPRICE: " + product.getPrice() + "\tSTATUS: " + product.getStatus() + "\tDESCRIPTION: " + product.getDescription());
                     } else {
                         System.out.println("Khong tim thay ten san pham");
                     }
