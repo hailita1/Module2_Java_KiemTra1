@@ -32,7 +32,7 @@ public class ProductController {
         return productService.check(o);
     }
 
-    public void sortPrice() {
-        productService.sortPrice();
+    public List<Product> sortPrice() {
+        return productService.sortPrice();
     }
 }

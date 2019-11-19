@@ -81,11 +81,10 @@ public class ProductRepositotyImpl implements ProductRepository {
 
 
     @Override
-    public void sortPrice() {
+    public List<Product> sortPrice() {
         Collections.sort(listProducts, new ProductComparator());
-        for (Product p : listProducts) {
-            System.out.println("ID: " + p.getId() + "\tNAME: " + p.getName() + "\tPRICE: " + p.getPrice() + "\tSTATUS: " + p.getStatus() + "\tDESCRIPTION: " + p.getDescription());
-        }
+        return listProducts;
+
     }
 
 }

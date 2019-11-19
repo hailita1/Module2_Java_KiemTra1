@@ -53,16 +53,20 @@ public class ProductTest {
                     System.out.println("Nhap ten san pham muon tim: ");
                     String nameSp = new Scanner(System.in).nextLine();
                     Product product = productController.findByName(nameSp);
-                    if (product != null){
+                    if (product != null) {
                         System.out.println(product.getName());
-                    }else {
+                    } else {
                         System.out.println("Khong tim thay ten san pham");
                     }
 
                     break;
                 }
                 case 6: {
-                    productController.sortPrice();
+                    List<Product> productList = productController.sortPrice();
+                    for (Product p : productList) {
+                        System.out.println("ID:\t " + p.getId() + "\t NAME: " + p.getName() + "\tPRICE: " + p.getPrice() + "\tSTATUS: " + p.getStatus() + "\tDESCRIPTION: " + p.getDescription());
+                    }
+
                     break;
                 }
 

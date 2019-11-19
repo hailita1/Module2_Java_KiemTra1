@@ -41,7 +41,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void sortPrice() {
-        productRepositoty.sortPrice();
+    public List sortPrice() {
+        return productRepositoty.sortPrice();
     }
 }
